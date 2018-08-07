@@ -12,6 +12,7 @@ phases:
     - cd react-static
     - yarn
     - yarn build
+    - yarn link react-static
     - cd ..
     - yarn link react-static
     - echo finished installing my version of react-static
