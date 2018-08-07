@@ -29,7 +29,7 @@
     "react-hot-loader": "^4.0.0-beta.21",
     "react-reveal": "^1.2.2",
     "react-router": "^4.2.0",
-    "react-static": "^5.9.7",
+    "react-static": "6.0.0-beta.16",
     "react-waypoint": "^8.0.3",
     "remark": "^9.0.0",
     "remark-html": "^7.0.0"
