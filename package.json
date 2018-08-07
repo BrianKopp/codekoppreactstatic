@@ -1,0 +1,41 @@
+{
+  "name": "react-static-example-basic",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-static start",
+    "stage": "react-static build --staging",
+    "build": "react-static build",
+    "serve": "serve dist -p 3000"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-brands-svg-icons": "^5.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "@fortawesome/react-fontawesome": "^0.1.0",
+    "axios": "^0.16.2",
+    "fs-extra": "^7.0.0",
+    "gray-matter": "^4.0.1",
+    "imagesloaded": "^4.1.4",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.3.1",
+    "jquery-parallax": "^1.0.1",
+    "magnific-popup": "^1.1.0",
+    "masonry-layout": "^4.2.2",
+    "mobile-detect": "^1.4.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-hot-loader": "^4.0.0-beta.21",
+    "react-reveal": "^1.2.2",
+    "react-router": "^4.2.0",
+    "react-static": "^5.9.7",
+    "react-waypoint": "^8.0.3",
+    "remark": "^9.0.0",
+    "remark-html": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-react-tools": "1.x.x",
+    "serve": "^6.1.0"
+  }
+}

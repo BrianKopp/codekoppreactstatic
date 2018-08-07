@@ -1,0 +1,39 @@
+.post-header {
+    margin: 40px 0 10px;
+}
+h1.post-header:after,
+h2.post-header:after,
+h3.post-header:after
+{
+	display: block;
+    content: '';
+    position: relative;
+    width: 20%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;    
+    border-bottom: 3px solid teal;
+}
+h4.post-header:after,
+h5.post-header:after,
+h6.post-header:after
+{
+	display: block;
+    content: '';
+    position: relative;
+    width: 10%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;    
+    border-bottom: 3px solid teal;
+}
+.post-paragraph {
+    margin-bottom: 20px;
+}
+.post-img {
+    margin: 0;
+}
+
+.category-sidebar-list {
+    list-style-type: none
+}

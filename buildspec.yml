@@ -1,0 +1,28 @@
+version: 0.2
+phases:
+  install:
+    commands:
+    - npm install
+    - npm uninstall react-static
+    - git clone https://github.com/briankopp/react-static
+  pre_build:
+    commands:
+    - echo installing react static
+    - cd react-static
+    - yarn
+    - yarn build
+    - cd ..
+    - yarn link react-static
+    - echo finished installing my version of react-static
+    - echo copying out post content
+    - aws s3 cp s3://codekoppblogposts ./content --recursive
+    - ls && ls content
+    - echo finished copying out post content
+  build:
+    commands:
+    - react-static build
+  post_build:
+    commands:
+artifacts:
+  files:
+  - dist/*

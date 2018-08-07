@@ -1,0 +1,13 @@
+*post image
+*header onclick event
+*post, spans what do they do?
+
+
+span {
+    border: 1px solid black;
+    white-space:nowrap;
+    overflow:hidden;
+    display: inline-block;
+    width: 100%;
+    text-overflow:ellipsis;
+}
