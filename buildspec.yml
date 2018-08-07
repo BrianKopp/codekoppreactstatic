@@ -4,6 +4,7 @@ phases:
     commands:
     - npm install
     - npm uninstall react-static
+    - npm install --save babel-runtime
     - git clone https://github.com/briankopp/react-static
     - npm install -g yarn
   pre_build:
