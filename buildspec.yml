@@ -15,7 +15,7 @@ phases:
     - yarn link react-static
     - echo finished installing my version of react-static
     - echo copying out post content
-    - aws s3 cp s3://codekoppblogposts ./content --recursive
+    - aws s3 cp s3://codekoppreactstaticcontent ./content --recursive
     - ls && ls content
     - echo finished copying out post content
   build:
