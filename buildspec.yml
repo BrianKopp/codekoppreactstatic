@@ -13,10 +13,12 @@ phases:
     commands:
     - echo installing react static
     - cd react-static
+    - ls
     - yarn
     - yarn build
     - yarn link
     - cd ..
+    - ls
     - yarn link react-static
     - echo finished installing my version of react-static
     - echo copying out post content
