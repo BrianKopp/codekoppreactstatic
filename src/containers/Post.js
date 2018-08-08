@@ -10,14 +10,15 @@ import { faFolder, faTags } from '@fortawesome/free-solid-svg-icons';
 import {fadeOutPreloader, setupCustom} from '../utils/custom'
 
 import './Post.css'
-import '../static/js/highlight.pack'
 
 class Post extends Component {
   componentDidMount() {
     fadeOutPreloader();
 		setupCustom();
-		hljs.initHighlightingOnLoad();
-  }
+	}
+	componentDidUpdate() {
+		hljs.initHighlighting();
+	}
 	render() {
     console.debug('Rendering Post');
     const {post, recentPosts, categories} = this.props;
