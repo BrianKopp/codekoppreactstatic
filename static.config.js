@@ -46,7 +46,7 @@ async function makePosts() {
 
 
 export default {
-  siteRoot: 'http://codekoppstaging.s3-website-us-east-1.amazonaws.com',
+  siteRoot: 'https://codekopp.com',
   getSiteData: () => ({
     title: 'React Static',
   }),
