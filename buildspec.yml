@@ -22,7 +22,7 @@ phases:
     - echo copying out post content
     - aws s3 cp s3://codekoppreactstaticcontent . --recursive
     - echo copying content/public to public
-    - cp content/public/img/blog/postimages public/img/blog/postimages
+    - cp -r content/public/img/blog/postimages public/img/blog/postimages/
     - echo finished copying out post content
   build:
     commands:
