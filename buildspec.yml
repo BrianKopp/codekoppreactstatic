@@ -27,6 +27,4 @@ phases:
     - react-static build
   post_build:
     commands:
-artifacts:
-  files:
-  - dist/**/*
+    - if [ "$CODEBUILD_BUILD_SUCCEEDING" = "1" ]; then aws s3 sync --delete dist/ "s3://codekoppstaging"; fi
