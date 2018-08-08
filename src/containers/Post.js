@@ -15,19 +15,13 @@ class Post extends Component {
   componentDidMount() {
     fadeOutPreloader();
 		setupCustom();
+		hljs.initHighlighting();
 	}
 	componentDidUpdate() {
 		hljs.initHighlighting();
 	}
 	render() {
-    console.debug('Rendering Post');
     const {post, recentPosts, categories} = this.props;
-    console.debug('Post content: ');
-		console.debug(post);
-		console.debug('Recent posts: ');
-		console.debug(recentPosts);
-		console.debug('Categories: ');
-		console.debug(categories);
     return (
       <div id="post">
         <CommonHead title='' type='single' />

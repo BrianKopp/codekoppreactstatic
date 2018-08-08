@@ -19,12 +19,8 @@ class Blog extends Component {
   }
   
   render() {
-    console.debug('Rendering Blog');
-    console.log(this.props);
     const posts = this.props.posts;
     const blogTitle = this.props.blogTitle ? `Posts about ${this.props.blogTitle}` : 'blog';
-    console.debug('Blog posts: ');
-    console.debug(posts);
     return (
       <div id="blog">
         <CommonHead title={blogTitle} type='' />

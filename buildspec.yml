@@ -21,6 +21,8 @@ phases:
     - echo finished installing my version of react-static
     - echo copying out post content
     - aws s3 cp s3://codekoppreactstaticcontent . --recursive
+    - echo copying content/public to public
+    - rsync -a content/public/ public/
     - echo finished copying out post content
   build:
     commands:

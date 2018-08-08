@@ -10,9 +10,6 @@ import BlogBlurb from '../blog/BlogBlurb';
 class HomeBlog extends Component {
     render() {
         const {posts} = this.props;
-        console.debug('Rendering HomeBlog');
-        console.debug('Posts:');
-        console.debug(posts);
         return (
             <section id="blog-section" className="blog-section">
             <div className="container">

@@ -7,7 +7,6 @@ import Fade from 'react-reveal/Fade';
 
 class BlogBlurb extends Component {
     render() {
-      console.debug(this.props.post);
       return (
         <div className="col m6 s12 mgt-20">
             <Fade duration={500} delay={300}>
