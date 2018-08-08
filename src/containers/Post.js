@@ -54,7 +54,7 @@ class Post extends Component {
 												<FontAwesomeIcon className="single-blog-taxonomy-item" icon={faFolder}/>
 			    							<div>
                           {post.data.categories.map(category => (
-                            <Link key={category} exact to={`/blog/category/${category}`}>{category}</Link>
+                            <Link key={category} exact to={`/blog/category/${category}/`}>{category}</Link>
                           ))}
 			    							</div>                      
 			    						</div>
@@ -80,7 +80,7 @@ class Post extends Component {
                       <div key={recentPost.data.slug} className="related-post-single">
                         <div className="related-post-img image-bg" data-image-bg={`/img/blog/tn/${recentPost.data.image_name}` || "/img/blog/b.jpg"}></div>
                         <div className="related-post-title">
-                          <Link exact to={'/blog/post/'+recentPost.data.slug}>{recentPost.data.title}</Link>
+                          <Link exact to={`/blog/post/${recentPost.data.slug}/`}>{recentPost.data.title}</Link>
                         </div>
                       </div>
                     ))}
@@ -94,7 +94,7 @@ class Post extends Component {
                     {categories.map(cat => (
                       <li key={cat} className="category-sidebar-list">
 												<FontAwesomeIcon className="single-blog-taxonomy-item" icon={faTags}/>
-												<Link exact to={`/blog/category/${cat}`}>{cat}</Link>
+												<Link exact to={`/blog/category/${cat}/`}>{cat}</Link>
 											</li>
                     ))}
 			    				</ul>

@@ -30,7 +30,7 @@ class HomeBlog extends Component {
                     </Waypoint>
                     
                     <div className="col s12 blog-all al-center">
-                        <Link exact to='/blog' className="btn-custom waves-effect">All Blog Posts</Link>
+                        <Link exact to='/blog/' className="btn-custom waves-effect">All Blog Posts</Link>
                     </div>
                 </div>
             </div>

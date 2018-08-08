@@ -64,11 +64,11 @@ export default {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css" />
       </Head>
       <Body>
+        <script src="/js/highlight.pack.js"></script>
         {children}
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDABQbhiRnXtXgvW39m9hLg8RLXGATfKls"></script>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script src="/js/highlight.pack.js"></script>
       </Body>
     </Html>
   ),

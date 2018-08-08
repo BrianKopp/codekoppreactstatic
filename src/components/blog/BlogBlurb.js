@@ -17,13 +17,13 @@ class BlogBlurb extends Component {
                 </div>
                 <div className="col s12 blog-desc pd-30">
                     <div className="blog-title">
-                        <Link to={`/blog/post/${this.props.post.data.slug}`}>{this.props.post.data.title}</Link>
+                        <Link to={`/blog/post/${this.props.post.data.slug}/`}>{this.props.post.data.title}</Link>
                     </div>
                     <div className="blog-content">
                         <p>{this.props.post.data.blurb}</p>
                     </div>
                     <div className="blog-more">
-                        <Link to={`/blog/post/${this.props.post.data.slug}`} className="btn-custom waves-effect mgt-10 mgb-10">Read More</Link>
+                        <Link to={`/blog/post/${this.props.post.data.slug}/`} className="btn-custom waves-effect mgt-10 mgb-10">Read More</Link>
                     </div>
                 </div>
             </div>
