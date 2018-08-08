@@ -15,9 +15,11 @@ class Post extends Component {
   componentDidMount() {
     fadeOutPreloader();
 		setupCustom();
-		if (hljs !== undefined) {
-			setTimeout(() => {hljs.initHighlightingOnLoad();}, 500);
-		}
+		setTimeout(() => {
+			if (hljs != undefined) {
+				hljs.initHighlightingOnLoad();
+			}
+		}, 1000);
   }
 	render() {
     console.debug('Rendering Post');

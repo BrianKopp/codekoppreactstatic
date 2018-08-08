@@ -33,7 +33,9 @@ h6.post-header:after
 .post-img {
     margin: 0;
 }
-
+.post-code {
+    margin-bottom: 20px;
+}
 .category-sidebar-list {
     list-style-type: none
 }

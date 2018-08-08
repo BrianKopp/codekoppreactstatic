@@ -21,7 +21,8 @@ async function makePosts() {
     .replace(/<h5>/g, '<h5 class="post-header">')
     .replace(/<h6>/g, '<h6 class="post-header">')
     .replace(/<p>/g, '<p class="post-paragraph">')
-    .replace(/<img/g, '<img class="post-img"');
+    .replace(/<img/g, '<img class="post-img"')
+    .replace(/<pre/g, '<pre class="post-code"');
   
     // extract data categories and tags
     if (data.categories !== undefined) {
@@ -150,19 +151,7 @@ export default {
       {
         path: '404',
         component: 'src/containers/404'
-      },
-      ...makeCategoryRoutes(posts, categories)
+      }
     ]
   },
-}
-
-function makeCategoryRoutes(posts, categories) {
-  return categories.map(cat => {
-    return {
-      path: `/blog-categories/${cat}`,
-      compontent: 'src/containers/Blog',
-      getData: () => ({
-        posts: posts.filter(p => p.data.categories.indexOf(cat) > -1)
-      })
-    }});
 }
