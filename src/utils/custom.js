@@ -235,8 +235,8 @@ export function initGoogleMap() {
         return;
     } else {
         console.debug('g-map found');
-        const latitude = 38.8339;
-        const longitude = -104.8214;
+        const latitude = 38.9406;
+        const longitude = -104.7198;
         const mapStyles = [
             [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}],
             [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}],
@@ -249,7 +249,7 @@ export function initGoogleMap() {
 
         const mapOptions = {
             scrollwheel: false,
-            zoom: 14,
+            zoom: 10,
             center: new google.maps.LatLng(latitude, longitude),
             zoomControlOptions: {
                 position: google.maps.ControlPosition.TOP_RIGHT
@@ -259,15 +259,11 @@ export function initGoogleMap() {
 
         const mapElement = document.getElementById('g-map');
         const map = new google.maps.Map(mapElement, mapOptions);
-        const imageSrc = mapElement.getAttribute('data-map-marker');
-        const image = new google.maps.MarkerImage(imageSrc,
-            null, null, null, new google.maps.Size(48,48))
 
         const myLatLng = new google.maps.LatLng(latitude, longitude);
         const marker = new google.maps.Marker({
             position: myLatLng,
-            map: map,
-            icon: image
+            map: map
         });
         //let x = {lat: -25.3, lng: 131};
         //let mapElem = document.getElementById("g-map");
