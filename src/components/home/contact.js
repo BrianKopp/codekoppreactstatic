@@ -87,12 +87,7 @@ class Contact extends Component {
                         <div className="col l5 s12 contact-map">
                             <div className="col s12 w-block shadow-bg pd-0">
                                 <div className="col s12 g-map-wrapper pd-0">
-                                    <div id="g-map" 
-                                        data-latitude="40.713652"
-                                        data-longitude="-74.0079417"
-                                        data-mapstyle="1"
-                                        data-map-marker="img/marker.png"
-                                    >	
+                                    <div id="g-map" style={{height:'438px'}}>	
                                     </div>
                                 </div>
                             </div>
