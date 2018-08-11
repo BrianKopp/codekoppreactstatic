@@ -804,7 +804,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	width: 100%;
 	height: 100%;
 	padding: 150px 0;
-	background: rgba(12, 24, 36, 0.75);
+	background: #003b3b;
 }
 
 .top-section.top-section-home .overlay-section{
@@ -1791,7 +1791,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 }
 
 .blog-data a:first-of-type{
-	margin-left: -10px;
+	margin-left: 0px;
 }
 
 .blog-data a::after{

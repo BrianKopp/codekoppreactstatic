@@ -3,7 +3,7 @@ import { hot } from "react-hot-loader";
 
 
 const TopSection = ({title, type}) => (
-    <div className={"site-header top-section image-bg parallax-section " + (type==='' ? " " : (type==='home' ? "top-section-home" : "top-section-single"))} data-image-bg="/img/bg/bg.jpg">
+    <div className={"site-header top-section image-bg parallax-section " + (type==='' ? " " : (type==='home' ? "top-section-home" : "top-section-single"))}>
         <div className="overlay-section">
             <div className="container">
                 <div className="row">
