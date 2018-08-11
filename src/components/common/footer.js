@@ -3,6 +3,7 @@ import { hot } from "react-hot-loader";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import Zoom from 'react-reveal/Zoom';
+import { Link } from 'react-static';
 
 const Footer = () => (
     <footer className="footer">
@@ -10,9 +11,9 @@ const Footer = () => (
         <div className="row">
             <div className="col s12 back-to-top-wrapper">
                 <Zoom duration={700} delay={300}>
-                <a className="btn-circle  waves-effect back-to-top tooltipped animatescroll-link " data-position="top" data-delay="50" data-tooltip="Go To Top" href="#0">
+                <Link className="btn-circle waves-effect back-to-top tooltipped animatescroll-link" exact to="/#about-section">
                     <FontAwesomeIcon icon={faAngleUp}/>
-                </a>
+                </Link>
                 </Zoom>
                 <div className="copyright-text">
                     &copy; All rights Reserved.
