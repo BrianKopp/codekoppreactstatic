@@ -20,7 +20,7 @@ const About = () => (
                             <a className="btn-circle waves-effect download-resume tooltipped" data-position="top" data-delay="50" data-tooltip="Download Resume" href="#0">
                                 <FontAwesomeIcon icon={faDownload}/>
                             </a>
-                            <img className="about-img-img hoverable z-depth-2" src="/img/me.jpg" />
+                            <img className="about-img-content hoverable z-depth-2" src="/img/me.jpg" />
                             <div className="about-name">Brian Kopp</div>
                             <div className="about-title">Software Engineer</div>
                         </div>

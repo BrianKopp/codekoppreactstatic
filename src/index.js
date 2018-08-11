@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // import css
-import './static/css/responsive.css'
 import './static/css/color-6.css'
 import './static/css/magnific-popup.css'
 import './static/css/style.css'
+import './static/css/responsive.css'
 
 // import top-level javascript
 
