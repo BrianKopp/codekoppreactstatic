@@ -6,11 +6,11 @@ import Header from './header'
 import Nav from './nav'
 import TopSection from './top'
 
-const CommonHead = ({title, type}) => (
+const CommonHead = ({title, type, isHome}) => (
     <div id="commonhead">
         <Preloader />
         <Header/>
-        <Nav />
+        <Nav isHome={isHome}/>
         <TopSection title={title} type={type}/>
     </div>
 )

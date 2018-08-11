@@ -27,7 +27,7 @@ class Home extends Component {
     const {posts, portfolioItems} = this.props;
     return (
       <div id="home">
-        <CommonHead title='' type='home'/>
+        <CommonHead title='' type='home' isHome={true}/>
         <About />
         <Services />
         <Skills />
