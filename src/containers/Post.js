@@ -38,8 +38,11 @@ class Post extends Component {
 			    						{post.data.title}
 			    					</div>
 			    					<div className="blog-data">
-										{new Date(post.data.date).toLocaleDateString()}
+											<span>{new Date(post.data.date).toLocaleDateString()}</span>
 			    					</div>
+										<div className="blog-data">
+											<Link exact to='/blog' className='m0'>All Posts</Link>
+										</div>
 			    					<div className="single-blog-content">
                       <div dangerouslySetInnerHTML={{ __html: post.contents}} />
 			    					</div>
