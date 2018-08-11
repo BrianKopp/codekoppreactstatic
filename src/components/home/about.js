@@ -2,7 +2,7 @@ import React from 'react'
 import { hot } from "react-hot-loader";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import {faFacebook, faTwitter, faGooglePlus, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import Waypoint from "react-waypoint";
 import { highlightSection } from "../../utils/custom";
 import Fade from 'react-reveal/Fade'
@@ -45,11 +45,8 @@ const About = () => (
                             </div>
                         </div>
                         <div className="about-social col s12 pd-0">
-                            <a className="waves-effect waves-light" href="#0"><FontAwesomeIcon icon={faFacebook}/></a>
-                            <a className="waves-effect waves-light" href="#0"><FontAwesomeIcon icon={faTwitter}/></a>
-                            <a className="waves-effect waves-light" href="#0"><FontAwesomeIcon icon={faGooglePlus}/></a>
-                            <a className="waves-effect waves-light" href="#0"><FontAwesomeIcon icon={faGithub}/></a>
-                            <a className="waves-effect waves-light" href="#0"><FontAwesomeIcon icon={faLinkedin}/></a>
+                            <a className="waves-effect waves-light" href="https://github.com/briankopp"><FontAwesomeIcon icon={faGithub}/></a>
+                            <a className="waves-effect waves-light" href="https://www.linkedin.com/in/brian-kopp/"><FontAwesomeIcon icon={faLinkedin}/></a>
                         </div>
                     </div>
                 </div>
